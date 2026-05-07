@@ -1,0 +1,243 @@
+.energy-heading {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-energy-word {
+  text-shadow: 0 18px 0 rgba(232, 220, 0, 0.15), 0 34px 40px rgba(232, 220, 0, 0.16);
+}
+
+.featured-product-image {
+  animation: productFloat 4.5s ease-in-out infinite;
+}
+
+.energy-nav-icon {
+  display: inline-block;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+
+.mobile-menu-icon,
+.mobile-menu-icon::before,
+.mobile-menu-icon::after {
+  background: currentColor;
+  border-radius: 999px;
+  content: '';
+  display: block;
+  height: 2px;
+  transition: transform 200ms ease;
+  width: 22px;
+}
+
+.mobile-menu-icon {
+  position: relative;
+}
+
+.mobile-menu-icon::before {
+  left: 0;
+  position: absolute;
+  top: -7px;
+}
+
+.mobile-menu-icon::after {
+  left: 0;
+  position: absolute;
+  top: 7px;
+}
+
+.product-bag-icon {
+  border: 2px solid currentColor;
+  border-radius: 4px;
+  display: block;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+
+.product-bag-icon::before {
+  border: 2px solid currentColor;
+  border-bottom: 0;
+  border-radius: 999px 999px 0 0;
+  content: '';
+  height: 8px;
+  left: 4px;
+  position: absolute;
+  top: -8px;
+  width: 8px;
+}
+
+.hero-copy,
+.product-range-copy,
+.product-range-heading,
+.product-card {
+  width: min(342px, calc(100vw - 48px));
+}
+
+.hero-copy {
+  width: min(300px, calc(100vw - 56px));
+}
+
+.product-card,
+.product-card * {
+  max-width: 100%;
+  min-width: 0;
+}
+
+.benefit-marquee {
+  margin-inline: auto;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.benefit-marquee-track {
+  align-items: center;
+  animation: marqueeMove 24s linear infinite;
+  display: flex;
+  gap: clamp(52px, 7vw, 118px);
+  width: max-content;
+}
+
+.benefit-marquee:hover .benefit-marquee-track {
+  animation-play-state: paused;
+}
+
+.benefit-marquee-item {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: clamp(14px, 2vw, 24px);
+}
+
+.testimonial-card {
+  min-height: 300px;
+  transition: opacity 300ms ease, transform 300ms ease, box-shadow 300ms ease;
+}
+
+.testimonial-card-active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.testimonial-card-side {
+  opacity: 0.34;
+  transform: translateY(18px) scale(0.95);
+}
+
+.icon-user::before {
+  border: 2px solid #000;
+  border-radius: 999px;
+  content: '';
+  height: 7px;
+  left: 5px;
+  position: absolute;
+  top: 1px;
+  width: 7px;
+}
+
+.icon-user::after {
+  border: 2px solid #000;
+  border-radius: 999px 999px 0 0;
+  border-bottom: 0;
+  content: '';
+  height: 8px;
+  left: 2px;
+  position: absolute;
+  top: 10px;
+  width: 14px;
+}
+
+.icon-bag::before {
+  border: 2px solid #000;
+  border-radius: 3px;
+  content: '';
+  height: 13px;
+  left: 2px;
+  position: absolute;
+  top: 5px;
+  width: 14px;
+}
+
+.icon-bag::after {
+  border: 2px solid #000;
+  border-bottom: 0;
+  border-radius: 999px 999px 0 0;
+  content: '';
+  height: 8px;
+  left: 5px;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+.icon-search::before {
+  border: 2px solid #000;
+  border-radius: 999px;
+  content: '';
+  height: 11px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 11px;
+}
+
+.icon-search::after {
+  background: #000;
+  content: '';
+  height: 8px;
+  left: 12px;
+  position: absolute;
+  top: 11px;
+  transform: rotate(-45deg);
+  width: 2px;
+}
+
+@keyframes productFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+@keyframes marqueeMove {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-33.333%);
+  }
+}
+
+@media (max-width: 1023px) {
+  .testimonial-card-side {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .hero-copy,
+  .product-range-copy,
+  .product-card {
+    width: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .benefit-marquee-track,
+  .featured-product-image {
+    animation: none;
+  }
+}
