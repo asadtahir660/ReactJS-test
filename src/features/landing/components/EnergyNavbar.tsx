@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import brandLogo from '../../../assets/landing/brand-logo.png';
+import brandLogo from '../../../assets/landing/brand-logo.svg';
 import { navItems } from '../landingData';
 
 function navTarget(item: string) {
@@ -29,7 +29,7 @@ export function EnergyNavbar() {
           </button>
 
           <Link className="flex shrink-0 items-center" to="/">
-            <img alt="5-hour ENERGY" className="h-auto w-[86px] object-contain sm:w-[96px]" src={brandLogo} />
+            <img alt="5-hour ENERGY" className="h-[67px] w-[100%] object-contain sm:w-[100%]" src={brandLogo} />
           </Link>
 
           <div className="hidden items-center gap-8 text-sm font-semibold text-[#222] xl:flex">

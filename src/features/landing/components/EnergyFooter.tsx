@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import brandLogo from '../../../assets/landing/brand-logo.png';
+import brandLogo from '../../../assets/landing/brand-logo.svg';
 import waterSplashCans from '../../../assets/landing/water-splash-cans.jpeg';
 
 export function EnergyFooter() {
