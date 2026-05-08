@@ -22,18 +22,17 @@ export function ProductRange() {
     <section className="relative overflow-hidden bg-white px-4 pb-20 text-white" id="shop">
       <div className="absolute inset-x-0 top-0 h-[1060px] bg-black sm:h-[820px] xl:h-[760px]" />
       <div className="relative mx-auto max-w-[1760px]">
-        <div className="mx-auto max-w-5xl text-center">
+        <div className="mx-auto max-w-6xl text-center">
           <h2 className="energy-heading product-range-heading mx-auto text-[38px] font-black uppercase leading-[0.95] text-white sm:text-5xl md:hidden">
             <span className="block">Explore Our</span>
             <span className="block">Range Of</span>
-            <span className="block text-[#e8dc00]">Energy-Boosting</span>
-            <span className="block">Shots For</span>
-            <span className="block">Every Need</span>
+            <span className="block text-[#e8dc00]">Energy-Boosting Shots</span>
+            <span className="block">For Every Need</span>
           </h2>
           <h2 className="energy-heading mx-auto hidden max-w-[calc(100vw-32px)] font-black uppercase leading-[0.95] text-white md:block md:text-7xl lg:text-[82px]">
             <span className="block md:inline">Explore Our Range Of </span>
-            <span className="block text-[#e8dc00] md:inline">Energy-Boosting</span>
-            <span className="block">Shots For Every Need</span>
+            <span className="block text-[#e8dc00] md:inline">Energy-Boosting Shots </span>
+            <span className="block md:inline">For Every Need</span>
           </h2>
           <p className="product-range-copy mx-auto mt-6 max-w-4xl text-base leading-7 text-white/64 md:text-lg">
             Boost your energy and focus with 5-hour ENERGY shots, crafted for fast results. Choose from a variety of strengths and
@@ -52,7 +51,7 @@ export function ProductRange() {
               key={product.name}
             >
               <div className="rounded-[22px] border-[14px] border-white bg-black">
-                <div className={`relative grid aspect-square place-items-center overflow-hidden rounded-[12px] bg-gradient-to-br ${product.glow} to-black`}>
+                <div className={`relative grid aspect-square place-items-center overflow-hidden rounded-[12px] bg-radial-gradient ${product.glow} to-black`}>
                   <img
                     alt={product.name}
                     className="h-[88%] w-auto object-contain drop-shadow-[0_26px_44px_rgba(0,0,0,0.6)] transition duration-500 group-hover:scale-105"
