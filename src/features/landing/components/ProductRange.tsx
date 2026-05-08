@@ -51,7 +51,7 @@ export function ProductRange() {
               key={product.name}
             >
               <div className="rounded-[22px] border-[14px] border-white bg-black">
-                <div className={`relative grid aspect-square place-items-center overflow-hidden rounded-[12px] bg-radial-gradient ${product.glow} to-black`}>
+                <div className={`relative grid aspect-square place-items-center overflow-hidden rounded-[12px] bg-[radial-gradient(var(--tw-gradient-stops))] ${product.glow} to-black`}>
                   <img
                     alt={product.name}
                     className="h-[88%] w-auto object-contain drop-shadow-[0_26px_44px_rgba(0,0,0,0.6)] transition duration-500 group-hover:scale-105"
