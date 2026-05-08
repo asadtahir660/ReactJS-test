@@ -15,7 +15,6 @@ export function FeaturedProductSection() {
     <section className="overflow-hidden bg-white py-24 md:py-32" id="featured-products">
       <div className="mx-auto max-w-[1740px] px-4">
         <div className="mx-auto max-w-6xl text-center">
-          <img alt="" className="mx-auto mb-5 h-28 w-auto object-contain md:h-32" src={orangeCap} />
           <h2 className="energy-heading text-5xl font-black uppercase leading-[0.95] text-[#444] md:text-7xl lg:text-[86px]">
             Explore our <span className="text-[#e7db00]">Featured Products</span> to power through your day
           </h2>
