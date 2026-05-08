@@ -24,9 +24,9 @@ export function PromoGrid() {
             backgroundSize: 'cover'
           }}
         >
-          <h2 className="energy-heading text-4xl font-black uppercase leading-none md:text-6xl">
-            Build a <span className="text-[#ffe500]">Bundle</span>
-          </h2>
+            <h2 className="energy-heading text-4xl font-black uppercase leading-none md:text-6xl">
+              Build a <span className="text-[#ffe500]">Bundle</span>
+            </h2>
           <div className="mt-6">
             <EnergyButtonLink className="min-h-10 px-6 py-2 text-sm" to="/signup">
               Build Now

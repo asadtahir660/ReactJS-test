@@ -1,5 +1,5 @@
 .energy-heading {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: "Bebas Neue", Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   letter-spacing: 0;
 }
 
@@ -194,6 +194,34 @@ html {
   top: 11px;
   transform: rotate(-45deg);
   width: 2px;
+}
+
+
+
+.perspective-text {
+  font-size: clamp(60px, 30vw, 530px);
+  position: relative;
+  z-index: 2;
+  font-family: "Bebas Neue";
+}
+
+.perspective-shadow {
+  font-size: clamp(60px, 30vw, 530px);
+  color: transparent;
+  font-family: "Bebas Neue";
+  background: linear-gradient(
+    to top,
+    rgba(255, 238, 0, 0.30),
+    hsla(56, 100%, 24%, 0) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  transform: perspective(0px) rotateX(180deg) translateY(-75%);
+  transform-origin: top center;
+  filter: blur(1.5px);
+  margin-top: -6px;
+  position: absolute;
+  line-height: 0.9;
 }
 
 @keyframes productFloat {
