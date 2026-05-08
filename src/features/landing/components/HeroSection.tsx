@@ -26,7 +26,7 @@ export function HeroSection() {
             src={heroBottleGroup}
           />
 
-          <p className="hero-copy mx-auto -mt-6 max-w-3xl text-base leading-7 text-white/62 sm:-mt-10 md:text-lg lg:-mt-12">
+          <p className="hero-copy mx-auto -mt-6 max-w-4xl text-base leading-7 text-white/62 sm:-mt-10 md:text-lg">
             Lorem ipsum dolor sit amet, conetur ading elit. Lorem ipsum dolor sit amet, conetur ading elit.
           </p>
           <div className="mt-7">

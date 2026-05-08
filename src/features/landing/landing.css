@@ -222,6 +222,7 @@ html {
   margin-top: -6px;
   position: absolute;
   line-height: 0.9;
+  z-index: -1;
 }
 
 @keyframes productFloat {
