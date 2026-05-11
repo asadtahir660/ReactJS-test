@@ -79,14 +79,6 @@ export function Testimonials() {
           </div>
 
           <div className="mt-10 flex items-center justify-center gap-4">
-            <button
-              aria-label="Previous testimonial"
-              className="grid h-12 w-12 place-items-center rounded-full border border-[#dedede] text-xl text-[#555] transition hover:border-black hover:bg-black hover:text-white"
-              onClick={() => move(-1)}
-              type="button"
-            >
-              &larr;
-            </button>
             <div className="flex items-center gap-2">
               {testimonials.map((testimonial, index) => (
                 <button
@@ -98,14 +90,6 @@ export function Testimonials() {
                 />
               ))}
             </div>
-            <button
-              aria-label="Next testimonial"
-              className="grid h-12 w-12 place-items-center rounded-full bg-[#ffe500] text-xl text-black transition hover:bg-black hover:text-white"
-              onClick={() => move(1)}
-              type="button"
-            >
-              &rarr;
-            </button>
           </div>
         </div>
       </div>
